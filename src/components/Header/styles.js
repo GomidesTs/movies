@@ -48,7 +48,7 @@ export const Profile = styled.div`
         }
     }
 
-    > img {
+    img {
         width: 5.6rem;
         height: 5.6rem;
 

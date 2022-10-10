@@ -12,6 +12,8 @@ export const Container = styled.div`
 
     border-radius: 1rem;
 
+    margin-bottom: 0.8rem;
+    
     > input {
         width: 100%;
         height: 5.6rem;
@@ -23,9 +25,9 @@ export const Container = styled.div`
         padding: 1.9rem 2.4rem;
 
         font-size: 1.4rem;
+        
 
         &::placeholder {
-
             color: ${({ theme }) => theme.COLORS.GRAY_2};
         }
 

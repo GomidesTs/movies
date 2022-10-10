@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -17,4 +18,29 @@ export const Content = styled.div`
     padding: 5rem 11rem;
 
     overflow-y: auto;
+`
+
+export const NewMovie = styled(Link)`
+    width: 20rem;
+    height: 5.6rem;
+
+    background-color: ${({ theme }) => theme.COLORS.PRIMARY};
+
+    border:none;
+
+    color: ${({ theme }) => theme.COLORS.WHITE};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+    border-radius: 1rem;
+
+    > svg {
+        font-size: 2rem;
+    }
 `

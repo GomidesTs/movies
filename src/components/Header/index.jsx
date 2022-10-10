@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { MdSearch } from 'react-icons/md'
 import { Container, Profile } from "./styles"
 import { Input } from './../Input'
@@ -16,15 +17,19 @@ export function Header() {
 
             <Profile>
                 <div>
+                    <Link to="/profile">
                     <strong>GomidesTs</strong>
+                    </Link>
 
-                    <a href="">Sair</a>
+                    <Link to="/">Sair</Link>
                 </div>
 
-                <img
-                    src='https://github.com/GomidesTs.png'
-                    alt='Foto do usuário'
-                />
+                <Link to="/profile">
+                    <img
+                        src='https://github.com/GomidesTs.png'
+                        alt='Foto do usuário'
+                    />
+                </Link>
             </Profile>
         </Container>
     )

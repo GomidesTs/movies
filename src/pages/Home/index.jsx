@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import { MdAdd } from 'react-icons/md'
 
-import { Container, Content } from './styles'
+import { Container, Content, NewMovie } from './styles'
 import { Button } from '../../components/Button'
 import { Card } from './../../components/Card'
 import { Header } from '../../components/Header'
@@ -14,10 +15,10 @@ export function Home() {
                 <Section
                     title='Meus filmes'
                 >
-                    <Button
-                        title='Adicionar filme'
-                        icon={MdAdd}
-                    />
+                    <NewMovie to='create'>
+                        <MdAdd/>
+                        Adicionar filme
+                    </NewMovie>
                 </Section>
 
                 <Card
